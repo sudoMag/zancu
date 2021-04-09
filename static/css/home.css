@@ -1,0 +1,367 @@
+body {
+	margin: 0;
+	background-color: var(--main-bg-color);
+	transition-duration: 0.5s;
+	display: flex;
+}
+
+@media (min-width: 300px), (max-width: 500px) {
+	#botton-left-section {
+		width: -webkit-fill-available;
+	    height: 40px;
+	    margin-bottom: 0px;
+	    align-self: flex-end;
+	}
+
+	#option-buttons-container {
+    	height: 40px;
+	}
+
+	#form-div-content {
+		width: 300px;
+	}
+
+	.input-container {
+		width: 270px;
+    	height: 35px;
+	}
+
+	.form-input {
+		height: 35px;
+    	width: 200px;
+    	margin: auto;
+	}
+
+	.button-container {
+		width: 90px;
+    	height: 35px;
+	}
+
+	#session-send-button {
+		height: 35px;
+    }
+}
+
+@media (min-width: 500px) {
+	#botton-left-section {
+		margin-top: 50px;
+		width: 40px;
+		height: -webkit-fill-available;
+	}
+
+	#option-buttons-container {
+    	height: -webkit-fill-available;
+	}
+
+	#form-div-content {
+		width: 200px;
+	}
+
+	.input-container {
+		width: 195px;
+    	height: 25px;
+	}
+
+	.form-input {
+		height: 20px;
+    	width: 180px;
+    	margin: 2px auto;
+	}
+
+	.button-container {
+	    width: 65px;
+    	height: 30px;
+	}
+
+	#session-send-button {
+		height: 20px;
+    }
+}
+
+/*----- pop ups and menus rules ------*/
+
+#pop-ups-section {
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    position: fixed;
+    display: flex;
+    z-index: 4;
+}
+
+#user-options-container {
+    margin: 55px 10px auto auto;
+    width: 250px;
+}
+
+#arrow {
+    height: 15px;
+    width: 50px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 100% 50% 0px 0px;
+    margin: 0px 15px 0px auto;
+}
+
+#user-options-window {
+    background-color: var(--secondary-bg-color);
+    height: 320px;
+    border-radius: 6%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-flow: column;
+    color: var(--main-font-color);
+
+}
+
+#loading-text {
+	margin: auto;
+}
+
+/*----- user config menu rules ------*/
+
+.options-menu-text-button {
+    margin: 10px auto;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    border-radius: 40px;
+    background-color: #bfbfbf73;
+}
+
+.button-text {
+	margin: auto;
+}
+
+/*----- session form rules ------*/
+
+#sessionPopUpsContainer {
+	margin: auto;
+    width: 350px;
+    height: 360px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 40px;
+}
+
+#back-button {
+	width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    position: absolute;
+    margin: 20px 0px auto 310px;
+}
+
+#session-form {
+	margin: auto;
+}
+
+.input-container {
+    border-radius: 40px;
+    background-color: #bfbfbf73;
+    display: flex;
+    margin: 15px auto;
+}
+
+#form-div-content {
+    height: 100px;
+    margin: auto;
+}
+
+.form-input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    text-align: center;
+    color: var(--main-font-color)
+}
+
+.button-container {
+    background: #bfbfbf73;
+    border-radius: 40px;
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#session-send-button {
+    background-color: transparent;
+    width: 80px;
+    border: none;
+    font-size: 16px;
+    margin: auto;
+    color: var(--main-font-color);
+}
+
+/*----- navbar rules ------*/
+
+#top-section {
+	position: fixed;
+    width: -webkit-fill-available;
+    z-index: 3;
+}
+
+.navbar {
+	height: 50px;
+    display: flex;
+    background-color: var(--secondary-bg-color);
+}
+
+#login-button {
+	margin: auto 10px auto 5px;
+	fill: gray;
+}
+
+#image-container {
+	margin: auto 5px auto auto;
+	color: var(--main-font-color);
+}
+
+/*----- right section rules ------*/
+
+#botton-right-section {
+	display: flex;
+	width: -webkit-fill-available;
+}
+
+.container {
+	max-width: 80%;
+	min-width: 300px;
+	margin: 0 auto;
+	margin-top: 100px;
+	z-index: 0;
+}
+
+/*----- left section rules ------*/
+
+#botton-left-section {
+	position: fixed;
+    background-color: gray;
+    transition-duration: 1s;
+    transition: lineal;
+    z-index: 2;
+}
+
+#return-folder-button {
+	margin: auto;
+}
+
+#option-buttons-container {
+	display: flex;
+}
+
+/*----- viewer rules ------*/
+
+#viewer-container {
+    display: flex;
+    width: -webkit-fill-available;
+}
+
+#rute-viewer {
+	margin: 0 auto 0 0;
+    height: 25px;
+    min-width: 60px;
+    display: flex;
+    background-color: var(--secondary-bg-color);
+    border-radius: 0 0 10px 0;
+    box-shadow: -10px 7px 9px 0px #00000029;
+}
+
+#rute-text {
+	margin: auto 10px;
+    text-align: center;
+}
+/*----- files rules ------*/
+
+.file-card {
+	width: 90px;
+    height: 110px;
+    margin: 5px;
+    text-decoration: none;
+    color: var(--secondary-font-color);
+}
+
+#folders-container {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.type-file-icon {
+    width: 75px;
+    height: 75px;
+    margin: 5px auto;
+}
+
+.filename-text {
+    text-align: center;
+}
+
+/*----- type file rules ------*/
+
+.folder {
+	background-image: url("/static/media/folder.ico");
+	background-size: 100%; 
+}
+
+.file {
+	background-image: url("/static/media/file.png");
+	background-size: 100%;
+}
+
+/*----- example rules ------*/
+
+#circle-face {
+    width: 180px;
+    height: 180px;
+	margin: 20px auto 20px auto;
+    transition-duration: 0.5s;
+    display: flex;
+}
+
+#like-button {
+	margin: auto;
+}
+
+.mode-name {
+	text-decoration: 0;
+	color: var(--main-font-color);
+	font-family: ubuntu, arial;
+    transition-duration: 0.5s;
+    position: absolute;
+}
+
+#text-mode-axis {
+	display: flex;
+    margin: auto;
+	height: 20px;
+    width: 20px;
+    transition-duration: 0.5s;
+}
+
+#text-mode-container {
+	width: 100px;
+	position: absolute;
+	margin: auto;
+    transform: translate(140px, 0);
+}
+
+#face-image {
+	background-image: url('/static/img/skywalker_head.png');
+	background-size: 100%;
+	position: absolute;
+    height: 180px;
+    width: 180px;
+    transition-duration: 0.5s;
+}
+
+#skywalkers-nave {
+	position: absolute;
+	background-image: url('/static/img/T65B.png');
+	background-size: 100%;
+	height: 120px;
+	width: 200px; 
+	margin: auto 0;
+	transition-duration: 0.5s;
+	transition-delay: 0.2s;
+}

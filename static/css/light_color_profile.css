@@ -1,0 +1,9 @@
+/* ------------  light mode  ---------------- */
+
+:root {
+	--main-bg-color: #efefef;
+    --secondary-bg-color: gainsboro;
+    --main-font-color: #4c4c4c;
+    --secondary-font-color: #5c5c5c;
+
+}
