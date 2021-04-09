@@ -33,11 +33,12 @@ function isSessionId(id) {
 	}
 }
 
+isSessionId(id);
 
 var Rutes = [];
 var actualRute = "";
 
-function getAllFolders(){
+function getAllFolders(back=null){
 	const ID = sessionStorage.getItem('sessionID');
 
 	rute = "/folder/" + ID;
@@ -67,6 +68,9 @@ function getAllFolders(){
 					`;
 					$('#folders-container').append(content);
 				}
+				if (back) {
+					Rutes.pop();
+				}
 			}
 			$('#return-folder-button').css('display', 'none');
 		});
@@ -78,8 +82,7 @@ function getAllFolders(){
 //--------------------------------------------------
 
 
-function getFolder(folderRute) {
-	console.log(`rutes = ${ Rutes.length }`);
+function getFolder(folderRute, back=null) {
 	if (!folderRute) {
 		console.log("folder rute undefined");
 	} else if (folderRute) {
@@ -119,7 +122,11 @@ function getFolder(folderRute) {
 						`;
 						$('#folders-container').append(content);
 					}
-					Rutes[Rutes.length - 1] = actualRute;
+					if (!back) {
+						Rutes[Rutes.length] = actualRute;
+					} else {
+						Rutes.pop();
+					}
 				}
 				$('#return-folder-button').css('display', 'block');
 				$('.filecard').click((e) => e.preventDefault());;
@@ -142,13 +149,10 @@ function downloadFile(folderRute, filename) {
 }
 
 function previousFolder() {
-	console.log(`rutes = ${ Rutes.length }`);
 	if (Rutes.length > 2) {
 		getFolder(Rutes[Rutes.length - 2] , true);
-		Rutes.pop();
 	} else {
-		getAllFolders();
-		Rutes.pop();
+		getAllFolders(true);
 	}
 }
 

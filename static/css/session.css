@@ -1,0 +1,59 @@
+/*----- session form rules ------*/
+
+#sessionPopUpsContainer {
+	margin: auto;
+    width: 350px;
+    height: 360px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 40px;
+}
+
+#back-button {
+	width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    position: absolute;
+    margin: 20px 0px auto 310px;
+}
+
+#session-form {
+	margin: auto;
+}
+
+.input-container {
+    border-radius: 40px;
+    background-color: #bfbfbf73;
+    display: flex;
+    margin: 15px auto;
+}
+
+#form-div-content {
+    height: 100px;
+    margin: auto;
+}
+
+.form-input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    text-align: center;
+    color: var(--main-font-color)
+}
+
+.button-container {
+    background: #bfbfbf73;
+    border-radius: 40px;
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#session-send-button {
+    background-color: transparent;
+    width: 80px;
+    border: none;
+    font-size: 16px;
+    margin: auto;
+    color: var(--main-font-color);
+}
