@@ -1,0 +1,85 @@
+:root {
+	--font-dark-main-color: #3a3a3a;
+}
+
+@font-face {
+	font-family: BebasNeue-Regular;
+	src: url('../fonts/BebasNeue-Regular.otf')format('opentype');
+}
+
+
+#banner-body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex: none;
+}
+
+#background-container {
+	align-content: center;
+	position: absolute;
+    z-index: -5;
+}
+
+#banner-background {
+	
+}
+
+#zancu-img1 {
+	width: 300;
+    height: 350;
+    margin: auto 5% 0 auto;
+}
+
+#banner-text {
+	font-family: BebasNeue-Regular, calibri, ubuntu;
+	margin: auto auto auto 10%;
+    width: 30%;
+    font-size: 40px;
+    color: var(--bg-main-color);
+
+}
+
+#presentation-section {
+	height: 500px;
+	display: flex;
+	flex: none;
+}
+
+#navbar {
+	position: fixed;
+	display: flex;
+	height: 50px;
+	width: 100%;
+    transition-duration: 1s;
+}
+
+#navbar-background {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	backdrop-filter: blur(50px) saturate(50) grayscale(0.6);
+    background-color: #ffffff9e;
+    opacity: 0;
+}
+
+.navbar-card {
+	background-color: white;
+	padding: 6px 15px;
+    border-radius: 50px;
+    font-family: calibri ,ubuntu;
+    z-index: 1;
+    color: var(--font-dark-main-color);
+}
+
+#name-text {
+	margin: auto auto auto 40px;
+	font-family: BebasNeue-Regular, calibri, ubuntu;
+	font-size: 25px;
+	color: var(--font-dark-main-color);
+	z-index: 1;
+}
+
+#contact-text {
+	margin: auto 40px auto auto;
+}

@@ -1,0 +1,25 @@
+:root {
+  --main-bg-color: #262d42;
+  --secondary-bg-color: #37324a;
+  --main-font-color: #d8d8d8;
+  --secondary-font-color: #a3a3a3;
+  --light-bg-color: #e0e0e0;
+  --dark-main-font-color: #3a3a3a;
+}
+
+body {
+	margin: 0;
+	overflow: hidden;
+	transition-duration: 1s;
+	background-color: var(--main-bg-color);
+}
+
+root {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-color: var(--light-bg-color);
+	margin: auto;
+	transition-duration: 1s;
+  	flex-direction: column;
+}

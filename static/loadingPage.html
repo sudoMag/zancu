@@ -1,0 +1,36 @@
+<!DOCTYPE html5>
+<html lang="es">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Loading</title>
+	<link id="main-style" rel="stylesheet" type="text/css" href="static/css/main.css">
+	<link id="loading-page-style" rel="stylesheet" type="text/css" href="static/css/loading_page.css">
+	<link id="chattering-page-style" rel="stylesheet" type="text/css" href="static/css/chattering_page.css">
+</head>
+<body>
+	<loading-page id='loading-page'>
+		<moon-body>
+			<div id="moon-shadow-container">
+				<moon-shadow id='moon-shadow'></moon-shadow>
+			</div>
+			<name-text>CHATTERING MOON</name-text>
+			<moon-crater id='crater1'></moon-crater>
+			<moon-crater id='crater2'></moon-crater>
+			<moon-crater id='crater3'></moon-crater>
+			<moon-crater id='crater4'></moon-crater>
+			<moon-crater id='crater5'></moon-crater>
+			<moon-crater id='crater6'></moon-crater>
+		</moon-body>
+		<curiosity-text></curiosity-text>
+		<loader-animation class="lds-ellipsis"><ball></ball><ball></ball><ball></ball><ball></ball></loader-animation>
+		<stars-container id='stars-container'>
+		</stars-container>
+	</loading-page>
+	<root id='root'>
+		<div id="rootTitle">ROOT PAGE</div>
+		<div id="rootDescription">aqui insertas la pagina con js</div>
+	</root>
+	<script type="text/javascript" src="static/js/main.js"></script>
+	<script type="text/javascript" src="static/js/loader.js"></script>
+</body>
+</html>
