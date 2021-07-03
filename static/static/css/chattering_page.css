@@ -1,0 +1,13 @@
+root div {
+  margin: auto;
+  color: var(--dark-main-font-color);
+}
+
+div#rootTitle {
+  font-size: 60px;
+}
+
+div#rootDescription {
+  margin-bottom: 5%;
+  font-size: 20px;
+}
