@@ -1,0 +1,12 @@
+
+/* float meandering animation */
+
+@keyframes floating-anim {
+	from {
+		transform: translate(0, 20px);
+	}
+
+	to {
+		transform: translate(0, -20px);
+	}
+}

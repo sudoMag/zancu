@@ -25,10 +25,13 @@
 	
 }
 
-#zancu-img1 {
-	width: 300;
-    height: 350;
-    margin: auto 5% 0 auto;
+#smoke-svg-2 {
+
+}
+
+#genius-svg {
+	margin: auto;
+	animation: floating-anim 5s infinite alternate;
 }
 
 #banner-text {

@@ -1,24 +1,7 @@
-function indexMain() {
-	$('#root').append(`
-	  <div id="banner-body">
-    </div>
-	  <div id="presentation-section">
-	  </div>
-	  <nav id="navbar">
-	  	<div id="navbar-background"></div>
-	  	<div id="name-text">
-	  		ZANCU
-	  	</div>
-	  	<div id="contact-text" class="navbar-card">
-	  		Contacto
-	  	</div>
-	  </nav>
-	 `);
-// Iclude this SVG in div whit banner-body id 
-  $('#banner-body').append(`
-<!-- genius SVG image -->
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
 
-		<svg
+<svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -31,7 +14,7 @@ function indexMain() {
    height="101.396mm"
    viewBox="0 0 37.150002 101.396"
    version="1.1"
-   id="genius-svg"
+   id="svg1744"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="genius.svg">
   <defs
@@ -717,8 +700,3 @@ function indexMain() {
     </g>
   </g>
 </svg>
-
-`);
-
-}
-
