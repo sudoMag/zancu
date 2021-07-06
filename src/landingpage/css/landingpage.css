@@ -7,6 +7,66 @@
 	src: url('../fonts/BebasNeue-Regular.otf')format('opentype');
 }
 
+@font-face {
+	font-family: big-john;
+	src: url('../fonts/BIG_JOHN.otf')format('opentype');
+}
+
+
+@media only screen and (max-width: 500px) {
+	#cards-container {
+		display: none;
+	}
+
+	#smoke-svg-2  {
+		display: none;
+	}
+
+	/*#smoke-svg-2-smartphone {
+		display: block;
+	}*/
+
+	#name-text {
+		margin: auto;
+	}
+}
+
+@media only screen and (min-width: 500px) {
+    #cards-container {
+		display: flex;
+	}
+
+	#smoke-svg-2  {
+		display: block;
+	}
+
+	/*#smoke-svg-2-smartphone {
+		display: none;
+	}*/
+
+	#name-text {
+	    margin: auto auto auto 40px;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+    #cards-container {
+		display: flex;
+	}
+
+	#smoke-svg-2  {
+		display: block;
+	}
+
+	/*#smoke-svg-2-smartphone {
+		display: none;
+	}*/
+
+	#name-text {
+	    margin: auto auto auto 40px;
+	}
+}
+
 
 #banner-body {
 	width: 100%;
@@ -31,7 +91,7 @@
     right: 0;
     bottom: 0;
     width: auto;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 
 #smoke-svg-2 {
@@ -40,25 +100,40 @@
     right: 0;
     bottom: 0;
     width: auto;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 
-#smoke-svg-2-smartphone {
-	display: none;
-}
+/*#smoke-svg-2-smartphone {
+	position: absolute;
+    z-index: -3;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    transition-duration: 0.5s;
+}*/
 
 #genius-svg {
 	margin: auto;
 	animation: floating-anim 5s infinite alternate;
+	width: auto;
+    height: 90%;
 }
 
 #banner-text {
-	font-family: BebasNeue-Regular, calibri, ubuntu;
-	margin: auto auto auto 10%;
+	margin: auto auto auto 35px;
+	font-family: big-john, calibri, ubuntu;
+    position: absolute;
     width: 30%;
-    font-size: 40px;
-    color: var(--bg-main-color);
+    height: 183px;
+    font-size: 50px;
+    z-index: -2;
+    color: var(--font-dark-main-color);
 
+}
+
+#banner-text span{
+	color: #34a9c8ff;
+	font-size: 60px;
 }
 
 #presentation-section {
@@ -103,14 +178,12 @@
 }
 
 #name-text {
-	margin: auto auto auto 40px;
-	font-family: BebasNeue-Regular, calibri, ubuntu;
-	font-size: 25px;
+	font-family: calibri, ubuntu;
+	font-size: 30px;
 	color: var(--font-dark-main-color);
 	z-index: 1;
 }
 
 #cards-container {
-	display: flex;
 	margin: auto 25px auto auto;
 }

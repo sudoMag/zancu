@@ -11,16 +11,10 @@ function toFall(event ,syringeMovil, fractionPercentage=++filesLoaded) { //por e
 	syringeMovil.style.transform = `translate(0px,${9.26042 - (percentage * 16.52084)}px)`;
 	console.log(fractionPercentage, totalToLoad);
 
-	scriptsClassNames = event.target.className;
-
-	for (let className of scriptsClassNames.split(' ')) {
-		if (className === 'librery') {
-			indexMain();
-			landingPageIndex();
-		}
-	}
 	
 	if (fractionPercentage === totalToLoad) {
+		indexMain();
+		landingPageIndex();
 		loadConplete();
 	}
 }
