@@ -1,8 +1,10 @@
-:root {
+html {
 	--bg-main-color: white;
 	--bg-secondary-color: gray;
 	--bg-main-loader-color: #2c588d;
 	--bg-banner-color: #7daed8;
+	--font-dark-main-color: #3a3a3a;
+	--blur-fx: blur(50px) saturate(50) grayscale(0.6);
 }
 
 body {

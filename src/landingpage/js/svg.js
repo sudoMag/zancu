@@ -1,10 +1,85 @@
 function insertSVG () {
 
+	$('#menu-button').append(`
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50"
+   height="50"
+   viewBox="0 0 13.229167 13.229167"
+   version="1.1"
+   id="svg1477"
+   sodipodi:docname="menu-button.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <defs
+     id="defs1471">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1905">
+      <feBlend
+         inkscape:collect="always"
+         mode="lighten"
+         in2="BackgroundImage"
+         id="feBlend1907" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="23.080294"
+     inkscape:cy="28.620068"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1024"
+     inkscape:window-height="547"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1474">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-283.77083)">
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#373737;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.27829409;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter1905);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="M 2.2070312,0.00195312 A 2.139361,2.139361 0 0 0 0.3359375,3.2890625 C 4.3340154,9.762124 8.4577061,13.330868 12.607422,14.78125 c 4.149716,1.450382 8.127481,0.616301 11.279297,-1.037109 6.303631,-3.306821 10.0625,-9.7402348 10.0625,-9.7402348 A 2.139361,2.139361 0 1 0 30.291016,1.7871094 c 0,0 -3.548684,5.6279357 -8.390625,8.1679687 C 19.47942,11.225095 16.925205,11.758443 14.017578,10.742188 11.109951,9.7259321 7.6505412,6.9925086 3.9746094,1.0410156 A 2.139361,2.139361 0 0 0 2.2070312,0.00195312 Z"
+       id="path1031-3"
+       inkscape:connector-curvature="0"
+       transform="matrix(0,0.20150325,-0.20150325,0,7.6607742,286.6683)" />
+  </g>
+</svg>
+`);
+
 // Iclude this SVG in div whit banner-body id 
   $('#banner-body').append(`
 <!-- genius-svg SVG image -->
 
-		<svg
+<svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -742,6 +817,7 @@ function insertSVG () {
    viewBox="0 0 129.04201 130.49201"
    version="1.1"
    id="smoke-svg-2"
+   class="smoke-svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="smoke-2.svg">
   <defs
@@ -845,6 +921,7 @@ function insertSVG () {
    viewBox="0 0 91.809997 81.249003"
    version="1.1"
    id="smoke-svg-1"
+   class="smoke-svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="smoke-1.svg">
   <defs
@@ -944,6 +1021,7 @@ function insertSVG () {
    viewBox="0 0 75.019997 123.156"
    version="1.1"
    id="smoke-svg-2-smartphone"
+   class="smoke-svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="smoke-2-smartphone.svg">
   <defs
@@ -1035,6 +1113,7 @@ function insertSVG () {
    viewBox="0 0 91.809997 81.249003"
    version="1.1"
    id="smoke-svg-1-smartphone"
+   class="smoke-svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="smoke-1-smartphone.svg">
   <defs
