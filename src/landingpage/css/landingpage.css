@@ -101,6 +101,7 @@
 
 	#banner-text {
 		display: block;
+		bottom: unset;
 	}
 }
 
