@@ -13,7 +13,7 @@
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 350px) {
 	#cards-container {
 		display: none;
 	}
@@ -22,12 +22,55 @@
 		display: none;
 	}
 
-	/*#smoke-svg-2-smartphone {
+	#smoke-svg-1  {
+		display: none;
+	}
+
+	#smoke-svg-2-smartphone {
 		display: block;
-	}*/
+	}
+
+	#smoke-svg-1-smartphone {
+		display: block;
+	}
 
 	#name-text {
 		margin: auto;
+	}
+
+	#banner-text {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 350px) {
+	#cards-container {
+		display: none;
+	}
+
+	#smoke-svg-2  {
+		display: none;
+	}
+
+	#smoke-svg-1  {
+		display: none;
+	}
+
+	#smoke-svg-2-smartphone {
+		display: block;
+	}
+
+	#smoke-svg-1-smartphone {
+		display: block;
+	}
+
+	#name-text {
+		margin: auto;
+	}
+
+	#banner-text {
+		display: block;
+		bottom: 80px;
 	}
 }
 
@@ -40,12 +83,24 @@
 		display: block;
 	}
 
-	/*#smoke-svg-2-smartphone {
+	#smoke-svg-1  {
+		display: block;
+	}
+
+	#smoke-svg-2-smartphone {
 		display: none;
-	}*/
+	}
+
+	#smoke-svg-1-smartphone {
+		display: none;
+	}
 
 	#name-text {
 	    margin: auto auto auto 40px;
+	}
+
+	#banner-text {
+		display: block;
 	}
 }
 
@@ -58,12 +113,24 @@
 		display: block;
 	}
 
-	/*#smoke-svg-2-smartphone {
+	#smoke-svg-1  {
+		display: block;
+	}
+
+	#smoke-svg-2-smartphone {
 		display: none;
-	}*/
+	}
+
+	#smoke-svg-1-smartphone {
+		display: none;
+	}
 
 	#name-text {
 	    margin: auto auto auto 40px;
+	}
+
+	#banner-text {
+		display: block;
 	}
 }
 
@@ -103,14 +170,23 @@
     transition-duration: 0.5s;
 }
 
-/*#smoke-svg-2-smartphone {
+#smoke-svg-2-smartphone {
 	position: absolute;
     z-index: -3;
     right: 0;
     bottom: 0;
     width: auto;
     transition-duration: 0.5s;
-}*/
+}
+
+#smoke-svg-1-smartphone {
+	position: absolute;
+    z-index: -3;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    transition-duration: 0.5s;
+}
 
 #genius-svg {
 	margin: auto;
