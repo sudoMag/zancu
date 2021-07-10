@@ -47,19 +47,21 @@ async function indexMain () {
         constructor() {
             super();
             var k = false;
+            const menuMoviles = '#menu-moviles';
 
-            $('#menu-moviles').css('transform',`translate(-100%)`);
+
+            rootLabel.style(menuMoviles, 'transform', `translate(-100%)`);
 
             function menuButtonClick () {
                 if (k == true) {
                     $('body').css('overflow-y', 'scroll');
                     $('#menu-button').css('transform', 'rotate(0deg)');
-                    $('#menu-moviles').css('transform', `translate(-100%)`);
+                    rootLabel.style(menuMoviles, 'transform', `translate(-100%)`);
                     k = false;
                 } else if (k == false) {
                     $('body').css('overflow-y', 'hidden');
                     $('#menu-button').css('transform', 'rotate(180deg)');
-                    $('#menu-moviles').css('transform', `translate(0)`);
+                    rootLabel.style(menuMoviles, 'transform', `translate(0)`);
                     k = true;
                 }
             }
