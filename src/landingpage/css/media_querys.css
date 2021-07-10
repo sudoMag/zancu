@@ -1,0 +1,153 @@
+@media only screen and (max-width: 350px) {
+	#cards-container {
+		display: none;
+	}
+
+	#smoke-svg-2  {
+		display: none;
+	}
+
+	#smoke-svg-1  {
+		display: none;
+	}
+
+	#smoke-svg-2-smartphone {
+		display: block;
+	}
+
+	#smoke-svg-1-smartphone {
+		display: block;
+	}
+
+	#name-text {
+		margin: auto;
+	}
+
+	#banner-text {
+		display: none;
+	}
+
+	#menu-moviles {
+		display: flex;
+	}
+
+	#menu-button {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 350px) {
+	#cards-container {
+		display: none;
+	}
+
+	#smoke-svg-2  {
+		display: none;
+	}
+
+	#smoke-svg-1  {
+		display: none;
+	}
+
+	#smoke-svg-2-smartphone {
+		display: block;
+	}
+
+	#smoke-svg-1-smartphone {
+		display: block;
+	}
+
+	#name-text {
+		margin: auto;
+	}
+
+	#banner-text {
+		display: block;
+		bottom: 80px;
+	}
+
+	#menu-moviles {
+		display: flex;
+	}
+
+	#menu-button {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 500px) {
+    #cards-container {
+		display: flex;
+	}
+
+	#smoke-svg-2  {
+		display: block;
+	}
+
+	#smoke-svg-1  {
+		display: block;
+	}
+
+	#smoke-svg-2-smartphone {
+		display: none;
+	}
+
+	#smoke-svg-1-smartphone {
+		display: none;
+	}
+
+	#name-text {
+	    margin: auto auto auto 40px;
+	}
+
+	#banner-text {
+		display: block;
+		bottom: unset;
+	}
+
+	#menu-moviles {
+		display: none;
+	}
+
+	#menu-button {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+    #cards-container {
+		display: flex;
+	}
+
+	#smoke-svg-2  {
+		display: block;
+	}
+
+	#smoke-svg-1  {
+		display: block;
+	}
+
+	#smoke-svg-2-smartphone {
+		display: none;
+	}
+
+	#smoke-svg-1-smartphone {
+		display: none;
+	}
+
+	#name-text {
+	    margin: auto auto auto 40px;
+	}
+
+	#banner-text {
+		display: block;
+	}
+
+	#menu-moviles {
+		display: none;
+	}
+
+	#menu-button {
+		display: none;
+	}
+}

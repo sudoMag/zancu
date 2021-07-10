@@ -1,5 +1,6 @@
-function indexMain() {
-	$('#root').append(`
+async function indexMain () {
+
+	rootLabel.insertContentInside(`
 	    <banner-section id="banner-body">
             <banner-text id="banner-text">
                 MAS DE TRES <span>DESEOS</span>
@@ -40,18 +41,7 @@ function indexMain() {
         </menu-moviles>
 	 `);
 
-    insertSVG();
-
-    function svgResize() {
-        $('#smoke-svg-2').css('height', window.innerHeight);
-        $('#smoke-svg-2-smartphone').css('height', (0.9 * window.innerHeight));
-        $('#smoke-svg-1-smartphone').css('height', (0.5 * window.innerHeight));
-        $('#smoke-svg-1').css('height', (0.8 * window.innerHeight));
-        $('#banner-text').css('margin', `${ [window.innerHeight / 2] - [$('#banner-text').height() / 2]} auto auto 35px`);
-    }
-
-    svgResize()
-    window.onresize = svgResize;
+    await insertSVG();
 
     class MenuMoviles extends HTMLElement {
         constructor() {
