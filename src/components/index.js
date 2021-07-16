@@ -1,5 +1,4 @@
 
-
 const labelReference = document.querySelector('#root');
 
 
@@ -9,33 +8,43 @@ class MainLabel {
     }
 
     insertContentInside(content) {
-
         this.body.innerHTML += content;
     }
+}
 
-    object(objectReferenceName) {
 
-    	if (objectReferenceName[0] === '.' || objectReferenceName[0] === '#') {
-
-    		return this.body.querySelector(objectReferenceName);
-    	} else {
-    		
-    		return console.error(
-    				`MainLabel object: "${objectReferenceName}" is not valid
-    				 valides values: ('.className' or '#idName')`
-    			);
-    	}
+class Thing {
+	constructor(objectReferenceName) {
+    	this.objectReferenced = document.querySelector(objectReferenceName);    	
 	}
 
-	style(objectReferenceName, ruleCssToChange, ruleValue) {
-		const objectReferenced = this.object(objectReferenceName);
+	css(ruleCssToChange, ruleValue) {
+		if (ruleCssToChange === 'transform') {
+			return this.objectReferenced.style.transform = ruleValue;
+		} 
 
-		if (objectReferenced) {
-			if (ruleCssToChange === 'transform') {
-				return objectReferenced.style.transform = ruleValue;
-			}
+		if (ruleCssToChange === 'overflow-y') {
+			return this.objectReferenced.style.overflowY = ruleValue;
 		}
+		
 	}
-}	
 
-rootLabel = new MainLabel(labelReference);
+	on(triggerAction, functionToActivate) {
+		const firstCaracter = 0;
+		return this.objectReferenced
+		.addEventListener(`${triggerAction}`, () => {console.log('click');});	
+	}
+
+}
+
+
+class BodyReference extends Thing {
+	constructor(){
+		super();
+		this.objectReferenced = document.body;
+	}
+}
+
+
+const rootLabel = new MainLabel(labelReference);
+const bodyLabel = new BodyReference();
